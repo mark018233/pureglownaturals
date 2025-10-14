@@ -1,0 +1,11 @@
+{
+  "name": "PureGlow Naturals",
+  "short_name": "PureGlow",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#1f6f4a",
+  "background_color": "#f4efe7",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "64x64", "type": "image/svg+xml" }
+  ]
+}

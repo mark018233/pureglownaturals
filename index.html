@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PureGlow Naturals — Sustainable skincare that actually works</title>
+  <meta name="description" content="Organic, eco-friendly skincare. Dermatologist tested, cruelty-free, biodegradable packaging. Honest ingredients, fair pricing." />
+  <link rel="canonical" href="http://localhost/index.html" />
+  <meta property="og:title" content="PureGlow Naturals" />
+  <meta property="og:description" content="Sustainable skincare that actually works — transparent, affordable, eco-friendly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost/" />
+  <meta property="og:image" content="assets/images/og-placeholder.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-sticky>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PureGlow Naturals home">
+        <svg class="logo" viewBox="0 0 120 32" aria-hidden="true">
+          <title>PureGlow Naturals</title>
+          <g fill="currentColor">
+            <path d="M16 2c6 6-2 16-8 20C6 16 10 8 16 2Z"></path>
+            <text x="28" y="22" font-family="Playfair Display, serif" font-size="18">PureGlow</text>
+          </g>
+        </svg>
+        <span class="brand-sub">Naturals</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a class="is-active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-ghost cart-open" data-analytics="open_cart">Cart (<span id="cartCount">0</span>)</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <!-- HERO -->
+<section class="hero">
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <p class="hero-intro">NEW ARRIVAL</p>
+      <h1>Daily Mineral SPF 30 – Pure Unflavored</h1>
+      <p class="hero-desc">
+        Shield your skin from harmful UV rays with our Daily Mineral SPF 30. 
+        Made with zinc oxide and nourishing botanicals, this gentle, fragrance-free sunscreen 
+        provides broad-spectrum protection without leaving a white cast. 
+        Perfect for all skin types—even sensitive ones.
+      </p>
+      <a href="#shop" class="btn btn-primary btn-lg">Order Now</a>
+
+      <div class="hero-stats">
+        <div class="stat"><strong>500M+</strong><span>Happy Clients</span></div>
+        <div class="stat"><strong>20M+</strong><span>Positive Reviews</span></div>
+        <div class="stat"><strong>100%</strong><span>Organic Food</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/product-img1.png" alt="PureGlow Organic Supergreens Powder">
+    </div>
+  </div>
+</section>
+
+    <!-- USP / Benefits (modern tiles) -->
+<section class="usp-section">
+  <div class="container">
+    <div class="usp-grid">
+      <article class="usp-card">
+        <span class="usp-icon" aria-hidden="true">🌿</span>
+        <h3>Plant-based</h3>
+        <p>Powered by botanicals. No parabens, phthalates, or synthetic dyes.</p>
+      </article>
+
+      <article class="usp-card">
+        <span class="usp-icon" aria-hidden="true">🧪</span>
+        <h3>Dermatologist tested</h3>
+        <p>Gentle on sensitive skin with clinically vetted formulas.</p>
+      </article>
+
+      <article class="usp-card">
+        <span class="usp-icon" aria-hidden="true">♻️</span>
+        <h3>Biodegradable</h3>
+        <p>Packaging designed to protect skin and the planet.</p>
+      </article>
+
+      <article class="usp-card">
+        <span class="usp-icon" aria-hidden="true">💸</span>
+        <h3>Fair pricing</h3>
+        <p>Premium quality without the luxury markup.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FEATURED PRODUCTS -->
+ <!-- FEATURED BAND -->
+<section class="featured-band">
+  <div class="container">
+    <header class="band-head">
+      <p class="eyebrow">SHOP</p>
+      <h2>Pick your favorite skincare</h2>
+      <p class="band-sub">
+        Thoughtfully formulated cleansers, toners, serums, SPF, and starter kits.
+        Clean ingredients, transparent labels, fair pricing.
+      </p>
+    </header>
+
+    <div class="scroller-wrap">
+      <button class="scroll-btn prev" aria-label="Previous">‹</button>
+
+      <div id="featuredScroller" class="scroller" tabindex="0" aria-label="Featured products">
+        <div id="featuredGrid" class="product-row"><!-- filled by JS --></div>
+      </div>
+
+      <button class="scroll-btn next" aria-label="Next">›</button>
+    </div>
+
+    <div class="band-cta">
+      <a class="btn btn-secondary" href="collections.html">Browse all products →</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- TESTIMONIALS -->
+<section class="tst is-simple">
+  <!-- one-time SVG icons -->
+  <svg class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 2.3l3.1 6.3 7 .9-5.1 4.9 1.3 6.9L12 17.9 5.7 21.3l1.3-6.9L1.9 9.5l7-.9L12 2.3z"/>
+    </symbol>
+    <symbol id="check" viewBox="0 0 24 24">
+      <path d="M20.3 6.7l-10 10-4.6-4.6 1.4-1.4 3.2 3.2 8.6-8.6z"/>
+    </symbol>
+    <symbol id="quote" viewBox="0 0 24 24">
+      <path d="M9 7H5v6h4v4H1V9c0-1.1.9-2 2-2h6v0zm14 0h-4v6h4v4h-8V9c0-1.1.9-2 2-2h6z"/>
+    </symbol>
+  </svg>
+
+  <div class="container">
+    <header class="tst-head">
+      <h2>What our users are saying</h2>
+      <p class="tst-sub">Trusted by conscious skincare shoppers for transparency, comfort, and results.</p>
+    </header>
+
+    <div class="tst-grid" aria-label="Customer reviews">
+     
+        <!-- FEATURED -->
+      <article class="tst-card tst-featured">
+        <div class="tst-row">
+          <span class="tst-avatar">SN</span>
+          <div>
+            <div class="tst-name">Sara N.</div>
+            <div class="tst-meta">Austin, US · Using for 4 months</div>
+          </div>
+          <div class="tst-rating" aria-label="5 out of 5">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg>
+          </div>
+        </div>
+
+        <p class="tst-quote">
+          “The Eco Starter Kit made it effortless to switch. My skin feels calmer within a week,
+          and I love that every ingredient is listed with purpose.”
+        </p>
+
+        <div class="tst-tags">
+          <span class="tst-tag">Eco Starter Kit</span>
+          <span class="tst-tag">Sensitive skin</span>
+        </div>
+
+        <div class="tst-foot">
+          <span class="chip">
+            <svg class="i"><use href="#check"/></svg> Verified purchase
+          </span>
+          <time>May 2025</time>
+        </div>
+      </article>
+
+      <!-- SIDE CARDS -->
+      <article class="tst-card">
+        <div class="tst-row">
+          <span class="tst-avatar">RK</span>
+          <div>
+            <div class="tst-name">Riya K.</div>
+            <div class="tst-meta">Bengaluru, IN · Pro plan</div>
+          </div>
+          <div class="tst-rating" aria-label="5 out of 5">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg>
+          </div>
+        </div>
+        <p class="tst-quote">“Renew Serum is the first niacinamide that didn’t sting. Pricing is fair, delivery is fast, and the packaging is fully recyclable.”</p>
+        <div class="tst-tags">
+          <span class="tst-tag">Renew Serum</span>
+          <span class="tst-tag">Fragrance-free</span>
+        </div>
+        <div class="tst-foot"><span class="chip"><svg class="i"><use href="#check"/></svg> Verified</span><time>Apr 2025</time></div>
+      </article>
+
+      <article class="tst-card">
+        <div class="tst-row">
+          <span class="tst-avatar">JL</span>
+          <div>
+            <div class="tst-name">Jacob L.</div>
+            <div class="tst-meta">Toronto, CA · 7 months</div>
+          </div>
+          <div class="tst-rating" aria-label="4.5 out of 5">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg class="half"><use href="#star"/></svg>
+          </div>
+        </div>
+        <p class="tst-quote">“Daily Mineral SPF rubs in clean with no cast. The returns policy gave me confidence to try a new brand.”</p>
+        <div class="tst-tags">
+          <span class="tst-tag">Mineral SPF 30</span>
+          <span class="tst-tag">No white cast</span>
+        </div>
+        <div class="tst-foot"><span class="chip"><svg class="i"><use href="#check"/></svg> Verified</span><time>Mar 2025</time></div>
+      </article>
+
+      <article class="tst-card">
+        <div class="tst-row">
+          <span class="tst-avatar">AM</span>
+          <div>
+            <div class="tst-name">Anika M.</div>
+            <div class="tst-meta">London, UK · 3 months</div>
+          </div>
+          <div class="tst-rating" aria-label="5 out of 5">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg>
+          </div>
+        </div>
+        <p class="tst-quote">“HydraMist sits on my desk now. Ingredient notes are clear—no greenwashing, just what it does.”</p>
+        <div class="tst-tags">
+          <span class="tst-tag">HydraMist Toner</span>
+          <span class="tst-tag">Transparent labels</span>
+        </div>
+        <div class="tst-foot"><span class="chip"><svg class="i"><use href="#check"/></svg> Verified</span><time>Apr 2025</time></div>
+      </article>
+
+      <article class="tst-card">
+        <div class="tst-row">
+          <span class="tst-avatar">EV</span>
+          <div>
+            <div class="tst-name">Evan V.</div>
+            <div class="tst-meta">Seattle, US · 1 year</div>
+          </div>
+          <div class="tst-rating" aria-label="5 out of 5">
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg><svg><use href="#star"/></svg>
+            <svg><use href="#star"/></svg>
+          </div>
+        </div>
+        <p class="tst-quote">“Switched for the sustainability, stayed for results. Cleanser + Serum keeps oil in check without drying.”</p>
+        <div class="tst-tags">
+          <span class="tst-tag">Radiance Cleanser</span>
+          <span class="tst-tag">Balanced routine</span>
+        </div>
+        <div class="tst-foot"><span class="chip"><svg class="i"><use href="#check"/></svg> Verified</span><time>Feb 2025</time></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <!-- EDUCATION -->
+<section class="education-section">
+  <div class="container">
+    <header class="edu-head">
+      <h2>Learn More About Conscious Skincare</h2>
+      <p>Explore quick reads that help you make confident, planet-friendly choices.</p>
+    </header>
+
+    <div class="grid-3 cards">
+      <a class="card card-link" href="collections.html#content-benefits">
+        <h3>Benefits of Organic Skincare</h3>
+        <p>Understand why plant-based actives can help restore skin balance.</p>
+      </a>
+      <a class="card card-link" href="collections.html#content-eco">
+        <h3>Eco-friendly Beauty Routines</h3>
+        <p>Build habits that are good for you and the planet.</p>
+      </a>
+      <a class="card card-link" href="collections.html#content-inci">
+        <h3>How to Read an INCI List</h3>
+        <p>Decode ingredient labels with confidence and clarity.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <section class="transparency">
+  <div class="container transparency-inner">
+    <h2>Radical transparency</h2>
+
+    <div class="transparency-points">
+      <div class="tpoint">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m0 0l-4 4m4-4l-4-4" />
+        </svg>
+        <span>Ingredients listed</span>
+      </div>
+
+      <div class="tpoint">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>30-day returns</span>
+      </div>
+
+      <div class="tpoint">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 12a9 9 0 1118 0 9 9 0 01-18 0zm9 0v4m0-8h.01" />
+        </svg>
+        <span>Carbon-neutral shipping</span>
+      </div>
+    </div>
+
+    <p class="transparency-note">
+      We publish full INCI lists, testing notes, and sourcing practices for every product.
+    </p>
+  </div>
+</section>
+
+  </main>
+
+  <!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <!-- Left: copy + form -->
+    <div class="newsletter-copy">
+      <h2>Stay in the loop</h2>
+      <p>
+        Join our newsletter and stay connected with the latest product updates, expert advice,
+        and tools designed to boost your productivity. Be the first to access exclusive content
+        and tips that help you work smarter every day!
+      </p>
+
+      <form class="newsletter-form" action="#" method="post" novalidate>
+        <label class="sr-only" for="nl-email">Your email</label>
+        <div class="input-wrap">
+          <!-- mail icon -->
+          <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Z"/>
+            <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <input type="email" id="nl-email" name="email" placeholder="Your email" required>
+        </div>
+        <button class="btn btn-dark" type="submit">Subscribe</button>
+      </form>
+
+      <p class="newsletter-legal tiny">
+        You agree to the <a href="#">terms of service</a>.<br>
+        You’ll receive the latest updates and tips. Unsubscribe anytime.
+      </p>
+      <a class="newsletter-unsub tiny" href="#">Unsubscribe</a>
+    </div>
+
+    <!-- Right: illustration -->
+    <div class="newsletter-art" aria-hidden="true">
+      <!-- Monochrome mailbox character (inline SVG) -->
+     <img src="assets/images/Mailbox.svg" alt="" srcset="">
+    </div>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <footer class="site-footer">
+  <div class="footer-inner container">
+    <!-- Left Section -->
+    <div class="footer-brand">
+      <img src="favicon.svg" alt="PureGlow Naturals Logo" class="footer-logo">
+      <p>
+        PureGlow Naturals helps you achieve radiant, healthy skin with clean, conscious formulations —
+        crafted for real results and lasting care.
+      </p>
+
+      <div class="footer-socials">
+       <div class="footer-socials">
+  <!-- Instagram -->
+  <a href="#" aria-label="Instagram">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  <a href="#" aria-label="Facebook">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="#" aria-label="YouTube">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"></path>
+      <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+    </svg>
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Middle Columns -->
+    <div class="footer-links">
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="#">Gift Sets</a></li>
+          <li><a href="#">Best Sellers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Ingredients</a></li>
+          <li><a href="#">Transparency</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 PureGlow Naturals. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+    <div class="trustbar">
+      <ul class="badges">
+        <li>Cruelty-Free</li>
+        <li>Dermatologically Tested</li>
+        <li>Biodegradable Packaging</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <dialog id="productModal" class="modal" aria-label="Product details">
+    <button class="modal-close" data-close-modal aria-label="Close">×</button>
+    <div class="modal-body" id="productModalContent"><!-- filled by JS --></div>
+  </dialog>
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your Bag</h3>
+      <button class="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-line"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+      <button id="beginCheckout" class="btn btn-primary" data-analytics="begin_checkout">Proceed to Checkout</button>
+      <p class="tiny">Carbon-neutral delivery. 30-day returns.</p>
+    </div>
+  </aside>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <!-- Analytics placeholder: GA4 / GTM -->
+  <!-- Example: Replace G-XXXXXXX and move to GTM if needed
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+  </script>
+  -->
+  <script>window.dataLayer = window.dataLayer || [];</script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

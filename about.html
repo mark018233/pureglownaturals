@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — PureGlow Naturals</title>
+  <meta name="description" content="Our mission is to make sustainable beauty accessible without compromising quality." />
+  <link rel="canonical" href="http://localhost/about.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PureGlow Naturals home">
+        <svg class="logo" viewBox="0 0 120 32" aria-hidden="true"><g fill="currentColor"><path d="M16 2c6 6-2 16-8 20C6 16 10 8 16 2Z"></path><text x="28" y="22" font-family="Playfair Display, serif" font-size="18">PureGlow</text></g></svg>
+        <span class="brand-sub">Naturals</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="is-active" href="about.html">About</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-ghost cart-open">Cart (<span id="cartCount">0</span>)</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="page-head">
+      <h1>Our story, mission, and vision</h1>
+      <p>We exist to make sustainable beauty accessible — with transparent formulas and fair prices.</p>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Mission</h2>
+        <p>Empower people to choose effective skincare that’s kind to skin and the planet.</p>
+      </article>
+      <article class="card">
+        <h2>Vision</h2>
+        <p>Become the most trusted e-commerce destination for conscious skincare shoppers.</p>
+      </article>
+    </section>
+
+    <section class="timeline">
+      <h2>How we work</h2>
+      <ol>
+        <li><strong>Sourcing:</strong> Plant-based actives from audited partners.</li>
+        <li><strong>Testing:</strong> Dermatologist reviewed for safety and efficacy.</li>
+        <li><strong>Packaging:</strong> Biodegradable and minimal waste.</li>
+        <li><strong>Transparency:</strong> Full INCI and results, always.</li>
+      </ol>
+    </section>
+
+    <section class="metrics grid-3 cards">
+      <article class="card">
+        <h3>98%</h3><p>Biodegradable packaging by weight</p>
+      </article>
+      <article class="card">
+        <h3>100%</h3><p>Cruelty-free across all SKUs</p>
+      </article>
+      <article class="card">
+        <h3>2–5 days</h3><p>Carbon-neutral delivery</p>
+      </article>
+    </section>
+
+    <section class="badges-row">
+      <span class="badge">Cruelty-Free</span>
+      <span class="badge">Dermatologically Tested</span>
+      <span class="badge">Biodegradable</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>PureGlow Naturals</h4><p>Conscious skincare made accessible.</p></div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="contact.html#returns">Returns</a></li>
+          <li><a href="contact.html#shipping">Shipping</a></li>
+          <li><a href="contact.html#privacy">Privacy</a></li>
+        </ul>
+      </nav>
+      <div><p class="tiny">© <span id="year"></span> PureGlow Naturals</p></div>
+    </div>
+    <div class="trustbar"><ul class="badges"><li>Ingredients listed</li><li>30-day returns</li><li>Carbon-neutral shipping</li></ul></div>
+  </footer>
+
+  <dialog id="productModal" class="modal"><button class="modal-close" data-close-modal>×</button><div id="productModalContent"></div></dialog>
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true"><div class="cart-head"><h3>Your Bag</h3><button class="cart-close">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div class="cart-line"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><button id="beginCheckout" class="btn btn-primary">Proceed to Checkout</button><p class="tiny">Carbon-neutral delivery. 30-day returns.</p></div></aside>
+  <div id="scrim" class="scrim" hidden></div>
+  <script>window.dataLayer = window.dataLayer || [];</script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
